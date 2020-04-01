@@ -28,6 +28,9 @@ public class FuncionesUsuario {
        ret=2000-desc;
        return ret<1000? 1000:ret;
     }
+    void CobroDeSueldo(int sueldo, Usuario u){
+        u.Saldo+=sueldo;
+    }
     
     
 }
