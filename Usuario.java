@@ -80,5 +80,22 @@ public class Usuario {
     public void setSaldo(int Saldo) {
         this.Saldo = Saldo;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Usuario other = (Usuario) obj;
+        if (this.Cedula != other.Cedula) {
+            return false;
+        }
+        return true;
+    }
     
 }
